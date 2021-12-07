@@ -9,14 +9,14 @@
     <title>Melanie Gunn</title>
 </head>
 <body class="bg-blue-100">
-    <nav class="container mx-auto">
-            <div class="flex justify-between m-2 bg-red-100">
+    <nav class="flex flex-row justify-between ">
+            <div class="flex justify-between w-screen m-2 bg-red-100">
                 <div class="flex flex-row items-center space-x-2 p-2  bg-green-100">
                     <img  class="rounded-full h-12 w-12" src="http://placekitten.com/100/150">
                     <div class="object-left ">Melanie Gunn</div>
                 </div>
                 
-                <div class="object-right content-center p-2">
+                <div class="flex flex-row items-center p-2">
                     <a class="mx-2">Home</a>
                     <a class="mx-2">About</a>
                     <a class="mx-2">Experience</a>
@@ -24,20 +24,40 @@
                 </div>
         </div>
         </nav>
-    <div>
-        <h1>About Me</h1>
-    </div>
-    <div>
-        <h1>Skills</h1>
-    </div>
-    <div>
-        <h1>Current Projects</h1>
-    </div>
-    <div>
-        <h1>Projects</h1>
-    </div>
-    <div>
-        <h1>Let's Connect</h1>
-    </div>
+        <div class="flex flex-col w-11/12 h-100% bg-red-300 mx-auto">
+            <div class="flex flex-col text-center font-bold p-2 bg-purple-300">
+                <h1>Melanie Gunn</h1>
+                <h2>Software Developer</h2>
+            </div> 
+            <div class="text-center font-bold p-2 border-2 border-black">
+                <div class=" object-right border-2" ><h1>About Me</h1></div>
+                <div class="inline-flex w-4/5 border-2 border-black">
+                    <img class="rounded-md h-80" src="resources/IMG_7622.jpg" alt="Melanie Gunn in front of St. Louis arch"> 
+                </div>
+                
+            </div>
+            <div class="text-center font-bold p-2 border-2 border-black">
+                <div><h1>Skills</h1></div>
+                <div class="flex flex-row justify-between text-center font-bold p-2 border-2 border-black">
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                        <h2>Languages</h2>
+                    </div>
+                    <div class="flex flex-col text-center font-bold p-2 border-2 border-black"><h2>Frameworks</h2></div>
+                    <div class="flex flex-col text-center font-bold p-2 border-2 border-black"><h2>Tools</h2></div>
+                    <div class="flex flex-col text-center font-bold p-2 border-2 border-black"><h2>Additional Skills</h2></div>
+                </div>
+            </div >
+            <div class="text-center font-bold p-2 border-2 border-black">
+                <h1>Projects</h1>
+            <!-- should be cards and the card will go to the github -->
+            </div>
+            <div class="text-center font-bold p-2 border-2 border-black">
+                <h1>Current Projects</h1>
+            </div>
+            <div class="text-center font-bold p-2 border-2 border-black">
+                <h1>Let's Connect</h1>
+            </div>
+        </div>
+        
 </body>
 </html>
