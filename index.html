@@ -4,97 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
+    <link href="./styles.css" rel="stylesheet">
     <title>Melanie Gunn</title>
 </head>
-<body class="bg-blue-100">
-    <nav class="flex flex-row justify-between ">
-            <div class="flex justify-between w-screen m-2 bg-red-100">
-                <div class="flex flex-row items-center space-x-2 p-2  bg-green-100">
-                    <img  class="rounded-full h-12 w-12" src="http://placekitten.com/100/150">
-                    <div class="object-left ">Melanie Gunn</div>
-                </div>
-                
-                <div class="flex flex-row items-center p-2">
-                    <a class="mx-2">Home</a>
-                    <a class="mx-2">About</a>
-                    <a class="mx-2">Experience</a>
-                    <a class="mx-2">Contact</a>
-                </div>
+<body>
+    
+    <header>   
+        <div class= "logo" >
+            <img src="http://placekitten.com/100/150" alt=""/>
         </div>
-        </nav>
-        <div class="flex flex-col w-11/12 h-100% bg-red-300 mx-auto">
-            <div class="flex flex-col text-center font-bold p-2 bg-purple-300">
+        <button class="nav-list" aria-label="navigation toggle">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#">Home</a></li>
+                <li class="nav__item"><a href="#">About</a></li>
+                <li class="nav__item"><a href="#">Experience</a></li>
+                <li class="nav__item"><a href="#">Contact</a></li>
+            </ul> 
+        </nav>   
+    </header>      
+       
+  
+        <main>
+            <header>
                 <h1>Melanie Gunn</h1>
-                <h2>Software Developer</h2>
-            </div> 
-            <div class="text-center font-bold p-2 border-2 border-black">
-                <div class=" object-right border-2" ><h1>About Me</h1></div>
-                <div class="inline-flex w-4/5 border-2 border-black">
-                    <img class="rounded-md h-80" src="resources/IMG_7622.jpg" alt="Melanie Gunn in front of St. Louis arch"> 
+            </header> 
+            <section >
+                <h2>About Me</h2>
+                <div class="container">
+                    <img src="resources/IMG_7622.jpg" alt="Melanie Gunn in front of St. Louis arch"> 
+                    <p>I am an education leader and strategic thinker with 10+ years of experience focused on identifying, understanding, and meeting organizational goals while using Agile methodologies.  Throughout my time in the classroom,  I managed and prioritized multiple tasks such as classroom management, responding to my student’s needs, creating and implementing lessons, and data management.  Throughout my coding experience,  I used tools such as Jira and Trello to define overarching goals of the project and worked with a team to break down tasks into smaller stories to achieve our desired deadline.  My experiences make me a strong candidate for this role because I have a strong experience with multitasking, working under pressure, building relationships, and project management.</p>
                 </div>
-                
-            </div>
-            <div class="text-center font-bold p-2 border-2 border-black">
-                <div><h1>Skills</h1></div>
-                <div class="flex flex-row justify-center space-x-20 text-center font-bold p-2 border-2 border-black m-4">
-                    <!-- beginning of language card -->
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg m-2 bg-white">
-                        <div class="font-bold text-xl mb-2 border-2 border-black px-full py-3 mx-4 mt-8">
-                            <h2>Languages</h2>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <div class="container">
+                        <!-- beginning of language card -->
+                        <div class="card">
+                            <div class="name">
+                                <h3>Languages</h3>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>JavaScript</li>
+                                    <li>Java</li>
+                                    <li>HTML5/CSS</li>
+                                    <li>SQL</li>
+                                </ul>
+                            </div>
+                        </div>  
+                        <!-- end of languages card -->
+                        <!-- beginning of frameworks card -->
+                        <div class="card">
+                            <div>
+                                <h3>Frameworks/Databases</h3>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>Spring</li>
+                                    <li>MySQL</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div>
-                            <ul class="list-disc list-inside text-left m-8">
-                                <li>JavaScript</li>
-                                <li>Java</li>
-                                <li>HTML5/CSS</li>
-                                <li>SQL</li>
-                            </ul>
-                        </div>
-                    </div>  
-                    <!-- end of languages card -->
-                    <!-- beginning of frameworks card -->
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg m-2 bg-white">
-                        <div class="font-bold text-xl mb-2 border-2 border-black py-3 mx-8 mt-8">
-                            <h2>Frameworks/Databases</h2>
-                        </div>
-                        <div>
-                            <ul class="list-disc list-inside text-left m-8">
-                                <li>React</li>
-                                <li>Spring</li>
-                                <li>MySQL</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- end of frameworks card -->
-                    <!-- beginning of tools card -->
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg m-2 bg-white">
-                        <div class="font-bold text-xl mb-2 border-2 border-black px-full py-3 mx-8 mt-8">
-                            <h2>Tools</h2>
-                        </div>
-                        <div>
-                            <ul class="list-disc list-inside text-left m-8">
+                        <!-- end of frameworks card -->
+                        <!-- beginning of tools card -->
+                        <div class="card">
+                            <h3>Tools</h3>
+                            <ul>
                                 <li> IntelliJ</li>
                                 <li> VSCode</li>
                                 <li> Jira</li>    
                                 <li> Confluence</li>
                                 <li> Trello</li> 
-                                <li> TailwindCSS</li>
                                 <li> Hibernate</li>
                                 <li> Gradle</li>
                             </ul>
                         </div>
-                        
-                    </div>
-                    <!-- end of tools card -->
-                    <!-- beginnning of additional skills card -->
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg m-2 bg-white">
-                        <div class="font-bold text-xl mb-2 border-2 border-black px-full py-3 mx-8 mt-8">
-                            <h2>Additional Skills</h2>
-                        </div>
-                        <div>
-                            <ul class="list-disc list-inside text-left m-8">
+                        <!-- end of tools card -->
+                        <!-- beginning of additional skills card -->
+                        <div class="card">
+                            <h3>Additional Skills</h3>
+                            <ul>
                                 <li>Agile development methodologies</li>
                                 <li>Analytical decision making</li>
                                 <li>Team collaboration</li>
@@ -103,21 +95,20 @@
                                 <li>Leadership</li> 
                             </ul>
                         </div>
-                    </div>
-                    <!-- end of additional skills card -->
+                        <!-- end of additional skills card -->
                 </div>
-            </div >
-            <div class="text-center font-bold p-2 border-2 border-black">
-                <h1>Projects</h1>
+            </section >
+            <section>
+                <h2>Projects</h2>
             <!-- should be cards and the card will go to the github -->
-            </div>
-            <div class="text-center font-bold p-2 border-2 border-black">
-                <h1>Current Projects</h1>
-            </div>
-            <div class="text-center font-bold p-2 border-2 border-black">
-                <h1>Let's Connect</h1>
-            </div>
-        </div>
+            </section>
+            <section>
+                <h2>Let's Connect</h2>
+                <form>
+
+                </form>
+            </section>
+        </main>
         
 </body>
 </html>
