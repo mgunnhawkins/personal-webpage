@@ -18,91 +18,108 @@
         </button>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#">Home</a></li>
-                <li class="nav__item"><a href="#">About</a></li>
-                <li class="nav__item"><a href="#">Experience</a></li>
-                <li class="nav__item"><a href="#">Contact</a></li>
+                <li class="nav__item"><a href="#home">Home</a></li>
+                <li class="nav__item"><a href="#about">About Me</a></li>
+                <li class="nav__item"><a href="#skills">Skills</a></li>
+                <li class="nav__item"><a href="#projects">Projects</a></li>
+                <li class="nav__item"><a href="#experience">Work Experience</a></li>
+                <li class="nav__item"><a href="#contact">Contact</a></li>
             </ul> 
         </nav>   
     </header>      
        
   
         <main>
-            <header>
-                <h1>Melanie Gunn</h1>
-            </header> 
-            <section >
-                <h2>About Me</h2>
-                <div class="container">
-                    <img src="resources/IMG_7622.jpg" alt="Melanie Gunn in front of St. Louis arch"> 
-                    <p>I am an education leader and strategic thinker with 10+ years of experience focused on identifying, understanding, and meeting organizational goals while using Agile methodologies.  Throughout my time in the classroom,  I managed and prioritized multiple tasks such as classroom management, responding to my student’s needs, creating and implementing lessons, and data management.  Throughout my coding experience,  I used tools such as Jira and Trello to define overarching goals of the project and worked with a team to break down tasks into smaller stories to achieve our desired deadline.  My experiences make me a strong candidate for this role because I have a strong experience with multitasking, working under pressure, building relationships, and project management.</p>
-                </div>
+            <!-- Itroduction -->
+            <section class="intro" id="home"> 
+                <h1 class="section__title section__title--intro">Hi, I am <strong>Melanie Gunn</strong></h1>
+                <p class="section__subtitle section__subtitle--intro">Software Developer</p>
+                <img src="resources/IMG_7622.jpg" alt="Melanie Gunn in front of St. Louis arch"> 
             </section>
-            <section>
+            <!-- About Me -->
+            <section class="about-me" id="about" >
+                <h2 class="section--title section__title--about">About Me</h2>
+                <p class="section__subtitle section__subtitle--about"></p>
+                <div class="about-me__body">
+                     <p>I am an education leader and strategic thinker with 10+ years of experience focused on identifying, understanding, and meeting organizational goals while using Agile methodologies.  Throughout my time in the classroom,  I managed and prioritized multiple tasks such as classroom management, responding to my student’s needs, creating and implementing lessons, and data management.  Throughout my coding experience,  I used tools such as Jira and Trello to define overarching goals of the project and worked with a team to break down tasks into smaller stories to achieve our desired deadline.  My experiences make me a strong candidate for this role because I have a strong experience with multitasking, working under pressure, building relationships, and project management.</p>
+                </div>
+                   
+            </section>
+            <section class="skills" id="skills">
                 <h2>Skills</h2>
-                <div class="container">
-                        <!-- beginning of language card -->
-                        <div class="card">
-                            <div class="name">
-                                <h3>Languages</h3>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li>JavaScript</li>
-                                    <li>Java</li>
-                                    <li>HTML5/CSS</li>
-                                    <li>SQL</li>
-                                </ul>
-                            </div>
-                        </div>  
-                        <!-- end of languages card -->
-                        <!-- beginning of frameworks card -->
-                        <div class="card">
-                            <div>
-                                <h3>Frameworks/Databases</h3>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li>Spring</li>
-                                    <li>MySQL</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- end of frameworks card -->
-                        <!-- beginning of tools card -->
-                        <div class="card">
-                            <h3>Tools</h3>
-                            <ul>
-                                <li> IntelliJ</li>
-                                <li> VSCode</li>
-                                <li> Jira</li>    
-                                <li> Confluence</li>
-                                <li> Trello</li> 
-                                <li> Hibernate</li>
-                                <li> Gradle</li>
-                            </ul>
-                        </div>
-                        <!-- end of tools card -->
-                        <!-- beginning of additional skills card -->
-                        <div class="card">
-                            <h3>Additional Skills</h3>
-                            <ul>
-                                <li>Agile development methodologies</li>
-                                <li>Analytical decision making</li>
-                                <li>Team collaboration</li>
-                                <li>Recruitment</li>
-                                <li>Staff training</li>
-                                <li>Leadership</li> 
-                            </ul>
-                        </div>
-                        <!-- end of additional skills card -->
+                <div>
+                    <!-- beginning of language card -->
+                    <div class="skill">
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>HTML5/CSS</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>  
+                    <!-- end of languages card -->
+                    <!-- beginning of frameworks card -->
+                    <div class="skill">
+                        <h3>Frameworks/Databases</h3>
+                        <ul>
+                            <li>Spring</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                    <!-- end of frameworks card -->
+                    <!-- beginning of tools card -->
+                    <div class="skill">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li> IntelliJ</li>
+                            <li> VSCode</li>
+                            <li> Jira</li>    
+                            <li> Confluence</li>
+                            <li> Trello</li> 
+                            <li> Hibernate</li>
+                            <li> Gradle</li>
+                        </ul>
+                    </div>
+                    <!-- end of tools card -->
+                    <!-- beginning of additional skills card -->
+                    <div class="skill">
+                        <h3>Additional Skills</h3>
+                        <ul>
+                            <li>Agile development methodologies</li>
+                            <li>Analytical decision making</li>
+                            <li>Team collaboration</li>
+                            <li>Recruitment</li>
+                            <li>Staff training</li>
+                            <li>Leadership</li> 
+                        </ul>
+                    </div>
+                    <!-- end of additional skills card -->
                 </div>
             </section >
-            <section>
-                <h2>Projects</h2>
+            <section class="my-projects" id="projects">
+                <h2 class="section__title">Projects</h2>
             <!-- should be cards and the card will go to the github -->
+                <div class="portfolio">
+                    <!-- Portfolio Item 1 -->
+                    <a href="#" class="portfolio__item">
+                        <p>HackerRank Project Image Here</p>
+                    </a>
+                    <!-- Portfolio Item 2 -->
+                    <a href="#" class="portfolio__item">
+                        <p>RoadTrip Runner Image Here</p>
+                    </a>
+                    <!-- Portfolio Item 3 -->
+                    <a href="#" class="portfolio__item">
+                        <p>BlackJack Image Here</p>
+                    </a>
+                </div>
+                <a href="#projects" class="btn">My Github</a>
             </section>
-            <section>
+            <section class="work-experience" id="experience">
+                <h2>Work Experience</h2>
+            </section>
+            <section class="contact-form" id="contact">
                 <h2>Let's Connect</h2>
                 <form>
 
