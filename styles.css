@@ -132,6 +132,30 @@ nav {
         width: calc(100% + 1.5em);
     }
 }
+
+/* About Me */
+.about-me {
+   background-color: var(--clr-dark);
+   background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./resources/about-me-bg.jpg);
+   background-size: cover;
+   color: var(--clr-light);
+   text-align: center;
+}
+.section__title--about {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--about::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+    opacity: 0.5;
+
+}
 /* section {
     border: 1px solid black;
 }
