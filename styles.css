@@ -51,6 +51,11 @@ img {
 strong {
     font-weight: bold; 
 }
+
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
 /* Typography */
 
 h1, h2, h3 {
@@ -83,6 +88,25 @@ h3 { font-size: var(--fs-h3); }
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+}
+
+/* buttons */
+.btn {
+    display: inline-block;
+    padding: .5em 2.5em;
+    background-color: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+    margin-top: 2em;
+}
+.btn:hover {
+    transform: scale(1.1);
 }
 /* Header */
 nav {
