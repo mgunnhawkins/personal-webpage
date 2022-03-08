@@ -156,6 +156,51 @@ nav {
     opacity: 0.5;
 
 }
+/* Skills */
+.skills {
+    background-color: var(--clr-light);
+    background-size: cover;
+    color: var(--clr-dark);
+    text-align: center;
+    margin: auto;
+ }
+.section__title--skills{
+    color: var(--clr-dark);
+    flex-wrap: wrap;
+}
+.section__title--skills::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+    opacity: 0.5;
+}
+.skills__table{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    
+}
+.skills__table--skill{
+    background-color: var(--clr-accent);
+    margin: 10px;
+    padding: 10px;
+    width: 20%;
+   
+}
+@media (max-width: 800px) {
+    .skills__table {
+      flex-wrap: wrap;
+    }
+    .skills__table div{
+        flex: 0 0 100%;
+        text-align:center;
+      }
+  }
 /* section {
     border: 1px solid black;
 }
