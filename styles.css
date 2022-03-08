@@ -201,37 +201,47 @@ nav {
         text-align:center;
       }
   }
-/* section {
-    border: 1px solid black;
-}
-header{
-    text-align: center;
-}
-h2 {
-    text-align: center;
-}
-nav {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-.logo{
-    border-radius: 100%;
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-}
-.card {
-    margin: 10px;
-    text-align: center;
-    border-radius: 3px;
-    border: 1px solid black;
-}
-.about{
-    display: flex:
 
+/* Projects */
+.projects {
+    background-color: var(--clr-dark);
+    background-size: cover;
+    color: var(--clr-light);
+    text-align: center;
+ }
+ .section__title--projects {
+    color: var(--clr-accent);
+    position: relative;
 }
-.container{
-    display: flex;
-    flex-direction: row;
- */
+.section__title--projects::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+    opacity: 0.5;
+}
+
+/* Work Experience */
+.work-experience {
+    background-color: var(--clr-light);
+    background-size: cover;
+    color: var(--clr-dark);
+    text-align: center;
+    margin: auto;
+ }
+.section__title--work-experience{
+    color: var(--clr-dark);
+    flex-wrap: wrap;
+}
+.section__title--work-experience::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+    opacity: 0.5;
+}
+/* Contact */
