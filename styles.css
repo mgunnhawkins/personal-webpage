@@ -154,7 +154,9 @@ nav {
     margin: 0.5em auto 1em;
     background: currentColor;
     opacity: 0.5;
-
+}
+.about-me__body {
+    margin: 2em;
 }
 /* Skills */
 .skills {
@@ -245,3 +247,22 @@ nav {
     opacity: 0.5;
 }
 /* Contact */
+.contact {
+    background-color: var(--clr-dark);
+    background-size: cover;
+    color: var(--clr-light);
+    text-align: center;
+ }
+ .section__title--contact {
+    color: var(--clr-accent);
+    position: relative;
+}
+.section__title--contact::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+    opacity: 0.5;
+}
