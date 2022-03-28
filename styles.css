@@ -252,16 +252,25 @@ nav {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auuto-rows: auto;
+    grid-auto-rows: auto;
     grid-gap: 1em;
     border-radius: 4px;
     max-width: 80%;
     justify-items: center;
     justify-content: center;
     align-items: stretch;
+
 }
 .portfolio__item {
     background-color:var(--clr-light);
+    width: 100%;
+    overflow: hidden;
+}
+
+.portfolio__img:hover{
+    transform: scale(1);
+    opacity: .3;
+    
 }
 .portfolio__img {
     transition: 
@@ -269,6 +278,13 @@ nav {
         opacity 250ms linear;
     margin: auto;
     align-items: center;
+    height: 14em;
+    width: 100%;
+}
+
+.portfolio__img: focus {
+    position: relative;
+    z-index: 2;
 }
 .portfolio__card--btn {
     display: block;
@@ -282,10 +298,11 @@ nav {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
-    margin-top: 2em;
 }
 #portfolio__img--blackjack{
     margin-top: 2.2em;
+    height: 14em;
+    width: 100%
 }
 #rtr__demo-link {
     display: block;
@@ -299,9 +316,8 @@ nav {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
-
-   
 }
+
 
 
 
@@ -332,9 +348,12 @@ nav {
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
+    padding: 2.5em 0;
+    font-weight: var(--fw-bold);
  }
- .section__title--contact {
+ .contact__title{
     color: var(--clr-accent);
+    font-size: 2.75rem;
     position: relative;
 }
 .section__title--contact::after {
@@ -345,4 +364,33 @@ nav {
     margin: 0.5em auto 1em;
     background: currentColor;
     opacity: 0.5;
+}
+
+i {
+    color: var(--clr-light);
+}
+
+.contact__link:hover{
+    text-decoration: underline;
+}
+.contact__link:hover, .social-list:hover {
+    opacity: .7;
+}
+
+.social-list{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    margin: 2em 0;
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 0 .5em;
+}
+    
+.contact a {
+    color: var(--clr-light);
+    text-decoration: none;
+
 }
