@@ -5,6 +5,7 @@
     --ff-primary:'Source Sans Pro', sans-serif;
     --ff-secondary:'Source Code Pro', monospace;
     
+    --fw-light: 100;
     --fw-reg: 300;
     --fw-bold: 900;
 
@@ -355,8 +356,37 @@ nav {
     margin: 10px;
     padding: 10px;
     width: 20%;
-   
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translateY(-50%) translateX(-50%); */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    cursor: pointer;
 }
+.work-experience--experience--title {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.work-experience--experience--subtitle {
+    font-weight: var(--fw-light);
+    font-style: italic;
+}
+.work-experience--list{
+    list-style: none;
+}
+.work-experience--list-item{
+    margin-top: 5px;
+    transition-duration: 0;
+    transition-delay: .5s;
+    transform: translateX(-100%);
+}
+.work-experience--experience:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+}
+.work-experience--list:hover {
+
+}
+
 @media (max-width: 800px) {
     .work-experience--table {
       flex-wrap: wrap;
@@ -365,7 +395,7 @@ nav {
         flex: 0 0 100%;
         text-align:center;
       }
-
+    }
 /* Contact */
 .contact {
     background-color: var(--clr-dark);
