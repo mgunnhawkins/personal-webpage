@@ -342,6 +342,30 @@ nav {
     background: currentColor;
     opacity: 0.5;
 }
+.work-experience--table{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    
+}
+.work-experience--experience{
+    background-color: var(--clr-accent);
+    margin: 10px;
+    padding: 10px;
+    width: 20%;
+   
+}
+@media (max-width: 800px) {
+    .work-experience--table {
+      flex-wrap: wrap;
+    }
+    .work-experience--table div{
+        flex: 0 0 100%;
+        text-align:center;
+      }
+
 /* Contact */
 .contact {
     background-color: var(--clr-dark);
