@@ -110,9 +110,27 @@ h3 { font-size: var(--fs-h3); }
     transform: scale(1.1);
 }
 /* Header */
-nav {
-    display: none;
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
 }
+.logo {
+    max-width: 100px;
+}
+.nav {
+    position: fixed;
+    background: var(--clr-dark);
+    color: var(--clr-accent);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.nav-item{
+    text-decoration: none;
+}
+
 
 /* Intro Section */
 .intro {
