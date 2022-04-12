@@ -90,6 +90,7 @@ h3 { font-size: var(--fs-h3); }
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+    height: 1.25em;
 }
 
 /* buttons */
@@ -117,7 +118,7 @@ header {
     padding: 1em;
 }
 .logo {
-    max-width: 100px;
+    max-width: 80px;
 }
 .nav {
     position: fixed;
@@ -158,9 +159,10 @@ header {
 
 /* Navigation Hamburger */
 .nav-toggle {
-    padding: .25em;
+    padding: .5em;
     background: transparent;
     border: 0;
+    cursor: pointer;
 }
 .hamburger {
     display: block;
